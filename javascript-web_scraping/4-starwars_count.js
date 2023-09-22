@@ -13,7 +13,6 @@ request(process.argv[2], (error, response, data) => {
   for (const movie of movies) {
     const characters = movie.characters;
     for (const characterUrl of characters) {
-      
       if (characterUrl.includes('18')) {
         count++;
       }
